@@ -240,10 +240,10 @@ The dataset used for training is publicly available on **Kaggle**:
 
 
 ## 🧑‍🎓 Contributors
-> - Sanjay Kumar
-> - Payas Jenner
-> - Azim Saleh
-> - Kabil Doss
+> - **Sanjay Kumar**
+> - **Payas Jenner**
+> - **Azim Saleh**
+> - **Kabil Doss**
 
 B.Tech – Artificial Intelligence & Data Science  
 Final Year Project
