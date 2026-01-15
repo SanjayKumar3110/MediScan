@@ -97,8 +97,8 @@ A01/
 
 1. **Clone the Repository**
 ```bash
-git clone <repository-url>
-cd Mediscan/A01
+git clone https://github.com/SanjayKumar3110/MediScan.git
+cd Mediscan/
 ```
 
 2. **Create a Virtual Environment**
@@ -234,9 +234,17 @@ This project demonstrates:
 - End-to-end system integration under real-world constraints
 
 ---
+## Dataset
+The dataset used for training is publicly available on **Kaggle**:
+- The project uses the [Doctors Handwritten Prescription BD Dataset](https://www.kaggle.com/datasets/mamun1113/doctors-handwritten-prescription-bd-dataset)
 
-## 🧑‍🎓 Author
-**Sanjay**  
+
+## 🧑‍🎓 Contributors
+> - Sanjay Kumar
+> - Payas Jenner
+> - Azim Saleh
+> - Kabil Doss
+
 B.Tech – Artificial Intelligence & Data Science  
 Final Year Project
 
