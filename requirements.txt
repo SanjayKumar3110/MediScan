@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+huggingface-hub
+transformers
+opencv-python
+numpy
+pandas
+Pillow
+hf_xet
+torch
+llama-cpp-python
+google-generativeai
+requests
