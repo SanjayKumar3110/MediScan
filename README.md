@@ -44,7 +44,7 @@ The system follows a **multi-agent orchestration approach**, where each agent is
 
 ### 📂 Project Structure
 ```text
-A01/
+MediScan/
 ├── data/                     # Data storage (images, dataset, etc.)
 ├── src/
 │   ├── agents/               # Specialist Agents
