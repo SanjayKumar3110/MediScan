@@ -1,6 +1,7 @@
 data/img_prescription/
 models/
-
+test/data/
+data/csv
 # Environment variables
 .env
 

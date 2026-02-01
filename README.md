@@ -1,4 +1,4 @@
-# 🏥 Smart Medical Assistant using Multi-Agent LLM 
+# Smart Medical Assistant using Multi-Agent LLM 
 
 ## 📌 Project Overview
 Medical prescriptions are often difficult for patients to understand due to handwritten text, medical abbreviations, complex drug names, and dosage instructions. This can lead to confusion, medication errors, and poor treatment adherence.

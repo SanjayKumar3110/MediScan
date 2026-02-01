@@ -12,7 +12,6 @@ def nearby_medic(city, specialty=None):
     
     # 1. Configuration
     base_url = "https://nominatim.openstreetmap.org/search"
-    # User-Agent is REQUIRED by OpenStreetMap policy
     headers = { 'User-Agent': 'SmartMedicalAssistant_StudentProject/1.0' }
     
     # Helper to clean up "Not Listed" data
@@ -41,7 +40,7 @@ def nearby_medic(city, specialty=None):
             return []
 
     # 2. Strategy A: Specific Specialist Search
-    # If specialty is provided, try that first (e.g., "Cardiologist in Coimbatore")
+    # If specialty is provided, try that first (e.g., "Cardiologist in City")
     search_query = f"{specialty} in {city}" if specialty else f"Hospitals in {city}"
     print(f"🔎 Connecting to OpenStreetMap... Searching: '{search_query}'")
     
