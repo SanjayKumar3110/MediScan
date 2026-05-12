@@ -238,16 +238,6 @@ This project demonstrates:
 The dataset used for training is publicly available on **Kaggle**:
 - The project uses the [Doctors Handwritten Prescription BD Dataset](https://www.kaggle.com/datasets/mamun1113/doctors-handwritten-prescription-bd-dataset)
 
-
-## 🧑‍🎓 Contributors
-> - **Sanjay Kumar**
-> - **Payas Jenner**
-> - **Azim Saleh**
-> - **Kabil Doss**
-
-B.Tech – Artificial Intelligence & Data Science  
-Final Year Project
-
 ---
 
 ## 📄 Disclaimer

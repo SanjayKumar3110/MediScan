@@ -42,7 +42,7 @@ def nearby_medic(city, specialty=None):
     # 2. Strategy A: Specific Specialist Search
     # If specialty is provided, try that first (e.g., "Cardiologist in City")
     search_query = f"{specialty} in {city}" if specialty else f"Hospitals in {city}"
-    print(f"🔎 Connecting to OpenStreetMap... Searching: '{search_query}'")
+    print(f" Connecting to OpenStreetMap... Searching: '{search_query}'")
     
     results = _run_search(search_query)
 
