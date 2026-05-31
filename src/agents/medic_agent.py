@@ -9,19 +9,9 @@ class MedicalAgent:
     """
 
     def __init__(self):
-        # You can add initialization logic here if needed (e.g., logging)
         pass
 
     def process_prescription(self, image_file):
-        """
-        Orchestrates the extraction of text from a prescription image.
-        
-        Args:
-            image_file: The uploaded image file (from Streamlit or file path).
-            
-        Returns:
-            str: The extracted text or an error message.
-        """
         print("--- MedicalAgent: Received image for processing ---")
 
         try:
@@ -37,16 +27,6 @@ class MedicalAgent:
             return f"MedicalAgent Error (OCR): {str(e)}"
 
     def chat(self, user_query, prescription_context):
-        """
-        Orchestrates the medical conversation based on extracted context.
-        
-        Args:
-            user_query (str): The patient's question.
-            prescription_context (str): The text previously extracted from the image.
-            
-        Returns:
-            str: The AI's response including safety checks.
-        """
         # 1. Validation
         if not prescription_context:
             return "I need to analyze a prescription first before I can answer questions about it."
@@ -54,11 +34,6 @@ class MedicalAgent:
         # 2. Delegate to Chat Tool (Meditron)
         try:
             print(f"MedicalAgent: Processing query: '{user_query}'")
-            
-            # The chat_tool.medical_chat function handles:
-            # - Loading the local Meditron model
-            # - Structuring the prompt
-            # - Running the Safety Check / Knowledge Base validation
             response = chat_tool.medical_chat(user_query, prescription_context)
             
             return response

@@ -1,6 +1,6 @@
 # Smart Medical Assistant using Multi-Agent LLM 
 
-## 📌 Project Overview
+##  Project Overview
 Medical prescriptions are often difficult for patients to understand due to handwritten text, medical abbreviations, complex drug names, and dosage instructions. This can lead to confusion, medication errors, and poor treatment adherence.
 
 The **Smart Medical Assistant** is an AI-powered healthcare support system that helps users interpret medical prescriptions in a clear and patient-friendly manner. The system allows users to upload prescription images and generates simplified explanations, safety guidance, and structured medical information using a **multi-agent Large Language Model (LLM) architecture**.
@@ -9,7 +9,7 @@ This project integrates **computer vision, natural language processing, pretrain
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Extract text from prescription images using OCR
 - Identify key medical entities such as medicines, dosage, and frequency
 - Generate patient-friendly explanations using LLMs
@@ -19,7 +19,7 @@ This project integrates **computer vision, natural language processing, pretrain
 
 ---
 
-## 🧠 System Architecture (Multi-Agent Design)
+##  System Architecture (Multi-Agent Design)
 The system follows a **multi-agent orchestration approach**, where each agent is responsible for a specialized task.
 
 ### 🔹 Agents Overview
@@ -42,7 +42,7 @@ The system follows a **multi-agent orchestration approach**, where each agent is
    - `doc_locate.py`: Logic for searching medical facilities.
    - `validate.py`: Ensures safety and adds disclaimers to the output.
 
-### 📂 Project Structure
+###  Project Structure
 ```text
 MediScan/
 ├── data/                     # Data storage (images, dataset, etc.)
@@ -67,7 +67,7 @@ MediScan/
 
 ---
 
-## 🔄 Complete Workflow
+##  Complete Workflow
 1. **Image Upload**: User uploads a prescription image via the Streamlit UI.
 2. **Routing**: `app.py` sends the image to the **Orchestrator**.
 3. **Processing**: The Orchestrator routes the image to the **Medical Agent**, which uses `ocr_model.py` to extract text.
@@ -84,7 +84,7 @@ MediScan/
 
 
 
-## 🛠️ Installation & Usage
+##  Installation & Usage
 
 ### Prerequisites
 
@@ -124,20 +124,20 @@ pip install -r requirements.txt
 API_KEY_EXTRACTION=your_gemini_api_key_here
 ```
 
-5. **📥 Download Local Meditron Model**
+5. ** Download Local Meditron Model**
 * Before running the app, you must download the local LLM weights.
 1. Navigate to the `test/` folder.
 2. Open **`chat.ipynb`** in Jupyter Notebook or VS Code.
 3. **Run the first cell** (labeled "Download Model").
 4. Wait for the download to complete. This will verify your setup and save the model file (`Meditron3-Gemma2-2B.Q4_K_M.gguf`) into the `models/` directory.
 
-6. **🚀 Run the Application**
+6. ** Run the Application**
 ```bash
 streamlit run app.py
 ```
 ---
 
-## 📖 How to Use
+##  How to Use
 
 ### Mode 1: Prescription Analysis (The "Eyes")
 
@@ -161,7 +161,7 @@ streamlit run app.py
 
 ---
 
-## 🧩 Technologies & Tools Used
+##  Technologies & Tools Used
 
 ### 🔹 Programming Language
 
@@ -201,7 +201,7 @@ streamlit run app.py
 * `Pillow` (PIL): For image processing.
 * `transformers`: For running the GGUF model locally with GPU acceleration.
 
-## ⚠️ Ethical Considerations & Safety
+##  Ethical Considerations & Safety
 - The system is designed strictly as an **assistive tool**
 - Does **not provide diagnosis or treatment recommendations**
 - Explicit medical disclaimers are included
@@ -209,7 +209,7 @@ streamlit run app.py
 
 ---
 
-## 🚀 Expected Outcomes
+##  Expected Outcomes
 - Improved patient understanding of prescriptions
 - Reduced confusion in medication usage
 - Demonstration of LLM-driven multi-agent systems in healthcare
@@ -217,7 +217,7 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 - Multilingual support
 - Voice-based interaction
 - Doctor and hospital recommendations using geolocation
@@ -226,7 +226,7 @@ streamlit run app.py
 
 ---
 
-## 📚 Academic Relevance
+##  Academic Relevance
 This project demonstrates:
 - Practical application of AI in healthcare
 - Multi-agent system design using pretrained models
@@ -240,7 +240,7 @@ The dataset used for training is publicly available on **Kaggle**:
 
 ---
 
-## 📄 Disclaimer
+##  Disclaimer
 This application is intended for educational and assistive purposes only.  
 It does not replace professional medical consultation, diagnosis, or treatment.
 ## License

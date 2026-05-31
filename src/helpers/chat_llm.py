@@ -2,12 +2,6 @@ from src.helpers.validate import local_model, safety_check
 
 # --- Chat (Updated to Local Meditron) ---
 def medical_chat(user_query, prescription_context):
-    """
-    Uses Local Meditron model.
-    Arguments:
-      user_query: The question from the user.
-      prescription_context: The text extracted from the image.
-    """
     try:
         llm = local_model()
         

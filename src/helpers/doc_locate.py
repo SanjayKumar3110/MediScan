@@ -57,9 +57,9 @@ def nearby_medic(city, specialty=None):
         return f"❌ No medical services found in {city}. Please check the city name."
 
     # 4. Format the Output
-    output_text = f"### 🏥 Recommended Medical Services in {city}\n"
+    output_text = f"**🏥 Recommended Medical Services in {city}**\n"
     if specialty:
-        output_text += f"*(Showing results for {specialty} or General Hospitals)*\n"
+        output_text += f"**(Showing results for {specialty} or General Hospitals)**\n"
         
     for place in results:
         # Get Name
@@ -71,8 +71,8 @@ def nearby_medic(city, specialty=None):
         map_link = f"https://www.google.com/maps/search/?api=1&query={lat},{lon}"
 
         # Build the String
-        output_text += f"\n**{name}**"
-        output_text += f"\n📍 [Click to Navigate]({map_link})\n"
+        output_text += f"\n **{name}**"
+        output_text += f"\n ###[Click to Navigate]({map_link})\n"
         output_text += "---"
 
     return output_text
